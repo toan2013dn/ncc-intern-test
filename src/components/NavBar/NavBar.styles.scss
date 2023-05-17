@@ -1,0 +1,51 @@
+.navbar {
+  width: 150px;
+  background-color: #191718;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    padding: 14px 0 11px 16px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #5c5c5c;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5c5c5c;
+      p {
+        color: #ffffff;
+      }
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #aaaaaa;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  .active {
+    background-color: #5c5c5c;
+    p {
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    height: 1px;
+
+    button {
+      width: 100%;
+    }
+  }
+}

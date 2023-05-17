@@ -1,0 +1,35 @@
+.content-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 63%;
+
+  .content-item {
+    max-width: 470px;
+
+    .text {
+      // style={{ fontSize: "24px", fontWeight: "700" }}
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &-styles {
+      margin-top: 18px;
+      p {
+        margin-left: 8px;
+      }
+    }
+  }
+  img {
+    float: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 100px;
+  }
+}
